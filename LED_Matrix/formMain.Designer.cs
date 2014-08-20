@@ -103,6 +103,7 @@
             this.frameTimer = new System.Windows.Forms.Timer(this.components);
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.clockTimer = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.colourBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.secColBox)).BeginInit();
@@ -292,6 +293,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.delBut);
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.speedBar);
@@ -934,6 +936,15 @@
             this.clockTimer.Interval = 10;
             this.clockTimer.Tick += new System.EventHandler(this.clockTimer_Tick);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(96, 130);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(102, 34);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1058,6 +1069,7 @@
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Button clockStartBut;
         private System.Windows.Forms.Timer clockTimer;
+        private System.Windows.Forms.Button button1;
     }
 }
 
